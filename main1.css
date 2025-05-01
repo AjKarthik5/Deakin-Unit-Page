@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366; /* Dark blue background */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to take available space */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #00509E; /* Lighter blue on hover */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-right: 40px; /* Increased space between search bar and logo */
+}
+
+.search-bar input {
+    padding: 10px; /* Increased padding for input */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+    width: 250px; /* Fixed width for input */
+}
+
+.search-bar button {
+    padding: 10px 15px; /* Increased padding for button */
+    background-color: #FF5733; /* Attractive button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.search-bar button:hover {
+    background-color: #C70039; /* Darker shade on hover */
+}
+
+.logo {
+    margin-left: auto; /* Push logo to the far right */
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #003366; /* Dark blue for headings */
+}
+
+footer {
+    background-color: #003366; /* Dark blue footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+article {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-family: Arial;
+}
+
+p {
+    font-size: 14px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
