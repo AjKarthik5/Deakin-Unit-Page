@@ -1,48 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> Home </title>
-<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deakin University</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
-<div>
-    <img src="logo.svg" alt="Deakin" width="200" height="210">
-</div>
 <body>
-<h1>SIT223-SIT753 - Professional Practice in IT</h1>
-<h2>Unit details</h2>
-<table style="width:100%">
-    <tr>
-        <td>Year:</td>
-        <td>2025 Trimester 1</td>
-    </tr>
-    <tr>
-        <td>Enrolment modes:</td>
-        <td>Trimester 1: Burwood (Melbourne), Geelong, Cloud (online)</td>
-    </tr>
-    <tr>
-        <td>Credit point(s):</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>Unit Chair:</td>
-        <td>Trimester 1: Dr Art Suwanwiwat</td>
-    </tr>
-    <tr>
-        <td>Scheduled Learning Activities:</td>
-        <td>1 x 3 hour active class per week, weekly drop in support.</td>
-      </tr>
-</table>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://www.deakin.edu.au/">Home</a></li>
+                <li><a href="https://www.deakin.edu.au/about-deakin/news-and-media-releases">News</a></li>
+                <li><a href="https://www.deakin.edu.au/students/help/about-clouddeakin">Student Portal</a></li>
+                <li><a href="https://dteach.deakin.edu.au/clouddeakin-guides/">Staff Portal</a></li>
+                <li><a href="https://www.deakin.edu.au/student-life-and-services/events">Events</a></li>
+                <li><a href="https://www.deakin.edu.au/help-hub">Contact</a></li>
+                <li><a href="unitsite.html">Unit Site</a></li>
+            </ul>
+        </nav>
+        <!-- <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div> -->
+        <form class="search-bar" action="https://www.deakin.edu.au/search" method="GET"> <!-- Redirect to Deakin's search -->
+            <input type="text" name="q" placeholder="Search..." required> <!-- Use 'q' as the query parameter -->
+            <button type="submit">Search</button>
+        </form>
+        <div class="logo">
+            <img src="logo.svg" alt="Deakin University Logo" width="200" height="210">
+        </div>
+    </header>
 
-<h3> Content</h3>
-<p>
-To be successful IT graduates need to understand the use of industry tools and practices,
-the ways these tools work and connect together, and the underlying professional, ethical,
-and teamwork knowledge and skills needed to put these into practice in a professional manner.
-</p>
-<h3>Hurdle requirement</h3>
-<p>
-To be eligible to obtain a pass in this unit, students must meet certain milestones as part of the portfolio.
-</p>
-<a href="https://www.deakin.edu.au/students/enrolment-and-fees/fees"> > Current students</a>
+    <main>
+        <section id="home" class="home-section">
+            <h1>Welcome to Deakin University</h1>
+            <p>
+                Discover a university where innovation, excellence, and student success come together. Explore our diverse programs,
+                world-class research, and vibrant campus life.
+            </p>
+
+            <div class="home-cards">
+                <article>
+                    <h2>Our Vision</h2>
+                    <p>
+                        To be Australia’s most connected university, promoting learning for all and driving research for a better future.
+                    </p>
+                </article>
+                <article>
+                    <h2>Why Choose Deakin?</h2>
+                    <ul>
+                        <li>Industry partnerships and practical experience</li>
+                        <li>Innovative learning technology and support</li>
+                        <li>Emphasis on global career opportunities</li>
+                        <li>Inclusive and supportive community</li>
+                    </ul>
+                </article>
+                <article>
+                    <h2>Campus Life</h2>
+                    <p>
+                        Join diverse clubs, embrace cultural activities, and enjoy modern facilities in our campuses across Victoria.
+                    </p>
+                </article>
+            </div>
+
+            <div class="home-cta">
+                <a href="#programs" class="btn-primary">Explore Programs</a>
+                <a href="#news" class="btn-secondary">Latest News</a>
+            </div>
+        </section>
+
+        <section id="news">
+            <h2>Latest News</h2>
+            <p>
+                Welcome to Deakin's news and media hub where you can find the latest news and events from our campuses and beyond.
+            </p>
+            <p>
+                There's always something happening at Deakin University. Whether it's a research breakthrough or a student achievement,
+                you'll find our stories here.
+            </p>
+            <p><a href="https://www.deakin.edu.au/about-deakin/news-and-media-releases">News</a></p>
+            <article>
+                <section id="University-Event">
+                    <h3>University Event</h3>
+                    <p>Details about the upcoming university event.</p>
+                    <p><a href="https://www.deakin.edu.au/student-life-and-services/events">Deakin Events</a></p>
+                </section>
+            </article>
+            <article>
+                <h3>New Course Offerings</h3>
+                <p>Information about new courses available this semester.</p>
+            </article>
+        </section>
+
+        <section id="programs">
+            <h2>Programs Offered</h2>
+            <ul>
+                <li>Undergraduate Programs</li>
+                <li>Graduate Programs</li>
+                <li>Research Programs</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                For inquiries about admissions, programs, or campus facilities, contact us:
+            </p>
+            <ul>
+                <li>Email: admissions@deakin.edu.au</li>
+                <li>Phone: +61 3 9244 6000</li>
+                <li>Address: 221 Burwood Hwy, Burwood VIC 3125, Australia</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Deakin University. All rights reserved.</p>
+    </footer>
 </body>
 </html>
